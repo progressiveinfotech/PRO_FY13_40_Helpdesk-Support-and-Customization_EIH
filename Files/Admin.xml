@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Admin>
+  <admins Name="UserTask" Url="UserTask" >
+    <adminValue Name="Create Customer" Url="AddCustomer.aspx"/>
+    <adminValue Name="Create User" Url="AddUser.aspx"/>
+    <adminValue Name="View User " Url="Viewuser.aspx"/>
+    <adminValue Name="Mapped Users To Sites" Url="UserToSiteMapping.aspx"/>
+    <adminValue Name="Define CAB Members" Url="AddCabMembers.aspx"/>
+    <adminValue Name="Define Authority for Escalation" Url="AddServiceEffected.aspx"/>
+    
+  </admins>
+
+  <admins Name="OrganizationTask" Url="OrganizationTask" >
+
+    <adminValue Name="Define Organization" Url="AddOrganization.aspx"/>
+    <adminValue Name="Define Region" Url="AddRegion.aspx"/>
+    <adminValue Name="Define Site" Url="ViewSite.aspx"/>
+    <adminValue Name="Define Department" Url="AddDepartment.aspx"/>
+    <adminValue Name="Import User From Active Directory" Url="ImportUserAd.aspx"/>
+
+  </admins>
+  
+  <admins Name="Services" Url="Services" >
+
+  
+    <adminValue Name="Define SLA" Url="ViewSLA.aspx"/>
+    <adminValue Name="Define Service Window" Url="ViewServiceWindow.aspx"/>
+    <adminValue Name="Define Holiday" Url="AddHoliday.aspx"/>
+    <adminValue Name="Define Color Scheme for Calls" Url="AddColorScheme.aspx"/>
+
+
+  </admins>   
+
+  <admins Name="OtherTask" Url="OtherTask" >
+
+    
+    <adminValue Name="AddCategory" Url="AddCategory.aspx"/>
+    <adminValue Name="AddSubcategory" Url="AddSubcategory.aspx"/>
+    <adminValue Name="AddMode" Url="AddMode.aspx"/>
+    <adminValue Name="AddPriority" Url="AddPriority.aspx"/>
+    <adminValue Name="AddStatus" Url="AddStatus.aspx"/>   
+    <adminValue Name="AddChange Status" Url="AddChangeStatus.aspx"/>
+    <adminValue Name="AddCountry" Url="AddCountry.aspx"/>
+    <adminValue Name="AddChange Type" Url="AddChangeType.aspx"/>
+    <adminValue Name="AddVendor" Url="Vendor.aspx"/>
+    <adminValue Name="Add Service Effected" Url="AddServiceEffected.aspx"/>
+   
+
+  </admins>  
+  
+      
+</Admin>

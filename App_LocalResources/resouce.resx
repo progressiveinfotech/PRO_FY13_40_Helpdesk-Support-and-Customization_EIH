@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="errCmpPassword" xml:space="preserve">
+    <value>Password and Re-Type Password Not Match</value>
+  </data>
+  <data name="errDataSave" xml:space="preserve">
+    <value>Data has been Saved</value>
+  </data>
+  <data name="errDrpOrg" xml:space="preserve">
+    <value>Select Organization</value>
+  </data>
+  <data name="errDrpRole" xml:space="preserve">
+    <value>Select Role </value>
+  </data>
+  <data name="errFstName" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="errLstName" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="errorgname" xml:space="preserve">
+    <value>Enter Organization Name </value>
+  </data>
+  <data name="errPassword" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="errRegexpPass" xml:space="preserve">
+    <value>Password Format is Not Valid</value>
+  </data>
+  <data name="errRePassword" xml:space="preserve">
+    <value>Enter Re -Type Password</value>
+  </data>
+  <data name="errUserExist" xml:space="preserve">
+    <value>User Name Already Exist</value>
+  </data>
+  <data name="errUserName" xml:space="preserve">
+    <value>Enter User Name</value>
+  </data>
+  <data name="errMemshipCreateUserEmail" xml:space="preserve">
+    <value>csm.admin@progressive.in</value>
+  </data>
+  <data name="errOccured" xml:space="preserve">
+    <value>Unknown error occured,due to some reason</value>
+  </data>
+  <data name="errSelectOrg" xml:space="preserve">
+    <value>-------Select Organization-------</value>
+  </data>
+  <data name="errSelectRole" xml:space="preserve">
+    <value>-------Select Role-------</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Orgabization Added</value>
+  </data>
+  <data name="BasicUserRole" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="errRegionExist" xml:space="preserve">
+    <value>Region Already Exist in Organization</value>
+  </data>
+  <data name="errRegionName" xml:space="preserve">
+    <value>Enter Region name</value>
+  </data>
+  <data name="errDomainName" xml:space="preserve">
+    <value>Unknown Error Occured ! Either Domain Name Incorrect or Not Able to Connect to Domain</value>
+  </data>
+  <data name="errUserDomainExist" xml:space="preserve">
+    <value>Users of this  Domain Already Exist in Database</value>
+  </data>
+  <data name="errCategoryExist" xml:space="preserve">
+    <value>Category Already Exist</value>
+  </data>
+  <data name="errCategoryName" xml:space="preserve">
+    <value>Enter Category Name</value>
+  </data>
+  <data name="errSelectCategory" xml:space="preserve">
+    <value>--------Select Category---------</value>
+  </data>
+  <data name="errUserNotVaild" xml:space="preserve">
+    <value>Either UserName or Password is not Valid</value>
+  </data>
+  <data name="errSubcategoryExist" xml:space="preserve">
+    <value>Subcategory Already Exist</value>
+  </data>
+  <data name="errSubcategoryname" xml:space="preserve">
+    <value>Enter Subcategory name</value>
+  </data>
+  <data name="errAddOrg" xml:space="preserve">
+    <value>You can create only one organization</value>
+  </data>
+  <data name="errValdrpcategory" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="errSelectregion" xml:space="preserve">
+    <value>------Select Region-------</value>
+  </data>
+  <data name="errRegnName" xml:space="preserve">
+    <value>Select Region Name</value>
+  </data>
+  <data name="errSiteExist" xml:space="preserve">
+    <value>Site Already Exist in the Selected Region</value>
+  </data>
+  <data name="errSiteName" xml:space="preserve">
+    <value>Enter Site Name</value>
+  </data>
+  <data name="errValidEmail" xml:space="preserve">
+    <value>Enter Valid E-Mail</value>
+  </data>
+  <data name="errValidUrl" xml:space="preserve">
+    <value>Enter Valid Url</value>
+  </data>
+  <data name="errCountry" xml:space="preserve">
+    <value>Enter Country Name</value>
+  </data>
+  <data name="errCountryExist" xml:space="preserve">
+    <value>Country Already Exist</value>
+  </data>
+  <data name="errPriorityExist" xml:space="preserve">
+    <value>Priority Name Already Exist</value>
+  </data>
+  <data name="errPriorityName" xml:space="preserve">
+    <value>Enter Priority Name</value>
+  </data>
+  <data name="errAlrdyMapped" xml:space="preserve">
+    <value>Sites have Already Mapped</value>
+  </data>
+  <data name="errNoOperation" xml:space="preserve">
+    <value>No Sites  has been Selected</value>
+  </data>
+  <data name="errSiteMapped" xml:space="preserve">
+    <value>Sites have been Mapped Successfully</value>
+  </data>
+  <data name="errSiteMpUmp" xml:space="preserve">
+    <value>Sites have Mapped and UnMapped Successfully</value>
+  </data>
+  <data name="errSitesUnMapped" xml:space="preserve">
+    <value>Sites have been UnMapped Successfully</value>
+  </data>
+  <data name="errStateExist" xml:space="preserve">
+    <value>State Already Exist</value>
+  </data>
+  <data name="errStateName" xml:space="preserve">
+    <value>Enter State Name</value>
+  </data>
+  <data name="errSelectImpact" xml:space="preserve">
+    <value>Enter Impact Name</value>
+  </data>
+  <data name="errSelectSite" xml:space="preserve">
+    <value>Select Site</value>
+  </data>
+  <data name="errImpactExist" xml:space="preserve">
+    <value>Impact Alredy Exist</value>
+  </data>
+  <data name="errRoleExist" xml:space="preserve">
+    <value>Role Already Exist</value>
+  </data>
+  <data name="errRoleName" xml:space="preserve">
+    <value>Enter Role Name</value>
+  </data>
+  <data name="errServiceWindParm" xml:space="preserve">
+    <value>Service Window Parameter has been Set</value>
+  </data>
+  <data name="errWorkingDays" xml:space="preserve">
+    <value>Select at least one working days</value>
+  </data>
+  <data name="errWorkingTime" xml:space="preserve">
+    <value>Start time should be less than End time</value>
+  </data>
+  <data name="errDepartment" xml:space="preserve">
+    <value>Enter Department Name</value>
+  </data>
+  <data name="errDepartmentExist" xml:space="preserve">
+    <value>Department Alredy Exist</value>
+  </data>
+  <data name="errValdrpSite" xml:space="preserve">
+    <value>Select Site</value>
+  </data>
+  <data name="errstatus" xml:space="preserve">
+    <value>Enter Status Name</value>
+  </data>
+  <data name="errStatusExist" xml:space="preserve">
+    <value>Status Already Exist</value>
+  </data>
+  <data name="errResTime" xml:space="preserve">
+    <value>Please Define resolution time for SLA</value>
+  </data>
+  <data name="errSLADef" xml:space="preserve">
+    <value>SLA Definition has been created</value>
+  </data>
+  <data name="errSLAExist" xml:space="preserve">
+    <value>SLA Definition already exist</value>
+  </data>
+  <data name="errSelectDept" xml:space="preserve">
+    <value>-------Select Department-------</value>
+  </data>
+  <data name="errselectste" xml:space="preserve">
+    <value>------Select Site--------</value>
+  </data>
+  <data name="errEnterDays" xml:space="preserve">
+    <value>Enter Days</value>
+  </data>
+  <data name="errSelectPrty" xml:space="preserve">
+    <value>Select Priority</value>
+  </data>
+  <data name="errSLAName" xml:space="preserve">
+    <value>Enter SLA Name</value>
+  </data>
+  <data name="errSelectTopic" xml:space="preserve">
+    <value>-----Select Topic------</value>
+  </data>
+  <data name="errTitle" xml:space="preserve">
+    <value>Enter Title</value>
+  </data>
+  <data name="strStatusClose" xml:space="preserve">
+    <value>closed</value>
+  </data>
+  <data name="strStatusOpen" xml:space="preserve">
+    <value>open</value>
+  </data>
+  <data name="strStatusResolved" xml:space="preserve">
+    <value>resolved</value>
+  </data>
+  <data name="strStatusOnHold" xml:space="preserve">
+    <value>on hold</value>
+  </data>
+  <data name="srColumnEndtime" xml:space="preserve">
+    <value>endtime</value>
+  </data>
+  <data name="strColumnAssignedTime" xml:space="preserve">
+    <value>AssignedTime</value>
+  </data>
+  <data name="strColumnCategoryid" xml:space="preserve">
+    <value>categoryid</value>
+  </data>
+  <data name="strColumnDeptid" xml:space="preserve">
+    <value>deptid</value>
+  </data>
+  <data name="strColumnModeid" xml:space="preserve">
+    <value>modeid</value>
+  </data>
+  <data name="strColumnPriorityid" xml:space="preserve">
+    <value>priorityid</value>
+  </data>
+  <data name="strColumnRequesttypeid" xml:space="preserve">
+    <value>requesttypeid</value>
+  </data>
+  <data name="strColumnSiteid" xml:space="preserve">
+    <value>siteid</value>
+  </data>
+  <data name="strColumnSLAid" xml:space="preserve">
+    <value>SLAid</value>
+  </data>
+  <data name="strColumnStarttime" xml:space="preserve">
+    <value>starttime</value>
+  </data>
+  <data name="strColumnstatusid" xml:space="preserve">
+    <value>statusid</value>
+  </data>
+  <data name="strColumnSubcategoryid" xml:space="preserve">
+    <value>subcategoryid</value>
+  </data>
+  <data name="strColumnTechnicianid" xml:space="preserve">
+    <value>technicianid</value>
+  </data>
+  <data name="strRequestTypeId" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="erroption" xml:space="preserve">
+    <value>-----Select Option-----</value>
+  </data>
+  <data name="strAdministratorRole" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="strTechnicianRole" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="errDescription" xml:space="preserve">
+    <value>Enter Description</value>
+  </data>
+  <data name="errselectdate" xml:space="preserve">
+    <value>Enter Date</value>
+  </data>
+  <data name="errsubcategorysave" xml:space="preserve">
+    <value>Added Successfully</value>
+  </data>
+  <data name="errupdate" xml:space="preserve">
+    <value>Update Successfully</value>
+  </data>
+  <data name="strDefaultPassword" xml:space="preserve">
+    <value>pass$1234</value>
+  </data>
+  <data name="erradd" xml:space="preserve">
+    <value>Add Successfully</value>
+  </data>
+  <data name="erralready" xml:space="preserve">
+    <value>Record Already Exist</value>
+  </data>
+  <data name="errdelete" xml:space="preserve">
+    <value>Delete Successfully</value>
+  </data>
+  <data name="errVendorname" xml:space="preserve">
+    <value>Enter Vendor name</value>
+  </data>
+  <data name="strColumnExternalTicket" xml:space="preserve">
+    <value>externalTicket</value>
+  </data>
+  <data name="strColumnVendorId" xml:space="preserve">
+    <value>Vendorid</value>
+  </data>
+  <data name="errModename" xml:space="preserve">
+    <value>Enter Mode Name</value>
+  </data>
+  <data name="errDeptName" xml:space="preserve">
+    <value>Department name should not be empty</value>
+  </data>
+  <data name="errservice" xml:space="preserve">
+    <value>Enter Service Name</value>
+  </data>
+  <data name="errServiceExist" xml:space="preserve">
+    <value>Service Already Exist</value>
+  </data>
+  <data name="errcompname" xml:space="preserve">
+    <value>Enter Computer Name</value>
+  </data>
+  <data name="errprocessor" xml:space="preserve">
+    <value>Enter Processor Name</value>
+  </data>
+  <data name="errproduct" xml:space="preserve">
+    <value>Enter Product Name</value>
+  </data>
+  <data name="errproductmanufacturer" xml:space="preserve">
+    <value>Enter Product Manufacturer </value>
+  </data>
+  <data name="errserialno" xml:space="preserve">
+    <value>Enter Serial Number</value>
+  </data>
+  <data name="strEmailFromLevel1Escalate" xml:space="preserve">
+    <value>csm.admin@progressive.in</value>
+  </data>
+  <data name="strEmailFromLevel2Escalate" xml:space="preserve">
+    <value>csm.admin@progressive.in</value>
+  </data>
+  <data name="strEmailFromLevel3Escalate" xml:space="preserve">
+    <value>csm.admin@progressive.in</value>
+  </data>
+  <data name="strEnterDays" xml:space="preserve">
+    <value>Enter Days</value>
+  </data>
+  <data name="strEnterSLA" xml:space="preserve">
+    <value>Enter SLA Definition</value>
+  </data>
+  <data name="strLevel1" xml:space="preserve">
+    <value>Time Definition for Escalation Level 1 is not valid</value>
+  </data>
+  <data name="strLevel2" xml:space="preserve">
+    <value>Time Definition for Escalation Level 2  is not valid</value>
+  </data>
+  <data name="strLevel3" xml:space="preserve">
+    <value>Time Definition for Escalation Level 2  is not valid</value>
+  </data>
+  <data name="strMailServer" xml:space="preserve">
+    <value>mail.progressive.in</value>
+  </data>
+  <data name="strRequestTypeIncident" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="strColorGreen" xml:space="preserve">
+    <value>green</value>
+  </data>
+  <data name="strColorRed" xml:space="preserve">
+    <value>red</value>
+  </data>
+  <data name="strColorYellow" xml:space="preserve">
+    <value>yellow</value>
+  </data>
+  <data name="errselectstatus" xml:space="preserve">
+    <value>------Select Status-------</value>
+  </data>
+  <data name="strChangestatusrequested" xml:space="preserve">
+    <value>Requested</value>
+  </data>
+  <data name="errnotempty" xml:space="preserve">
+    <value>This field should not be empty.</value>
+  </data>
+  <data name="StrApproval" xml:space="preserve">
+    <value>Approval</value>
+  </data>
+  <data name="StrApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="strColumnChangeType" xml:space="preserve">
+    <value>ChangeType</value>
+  </data>
+  <data name="StrCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="StrImplemented" xml:space="preserve">
+    <value>Implemented</value>
+  </data>
+  <data name="StrPlanning" xml:space="preserve">
+    <value>Planning</value>
+  </data>
+  <data name="StrRejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="StrRelease" xml:space="preserve">
+    <value>Release</value>
+  </data>
+  <data name="StrRequested" xml:space="preserve">
+    <value>Requested</value>
+  </data>
+  <data name="StrTesting" xml:space="preserve">
+    <value>Testing</value>
+  </data>
+  <data name="strAdminEmail" xml:space="preserve">
+    <value>csm.admin@progressive.in</value>
+  </data>
+  <data name="strPriorityHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="strSDMRole" xml:space="preserve">
+    <value>SDM</value>
+  </data>
+  <data name="strSMTPServer" xml:space="preserve">
+    <value>mail.progressive.in</value>
+  </data>
+  <data name="strContactNumber" xml:space="preserve">
+    <value>01204393941</value>
+  </data>
+  <data name="strYourSinscerely" xml:space="preserve">
+    <value>EIH Central Helpdesk</value>
+  </data>
+  <data name="strPManagerRole" xml:space="preserve">
+    <value>PManager</value>
+  </data>
+  <data name="errCustomername" xml:space="preserve">
+    <value>Select Customer</value>
+  </data>
+  <data name="serverNameForChangePage" xml:space="preserve">
+    <value>10.0.0.250</value>
+  </data>
+  <data name="strCallReportingTime" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="strAutoCallsLogging" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="strTechnicianMapping" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="strFeedBackMode" xml:space="preserve">
+    <value>0</value>
+  </data>
+</root>

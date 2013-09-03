@@ -1,0 +1,510 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterAsset.master.cs"
+    Inherits="Master_MasterAsset" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Progressive HelpDesk</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Include/MasterCSSFile.css" type="text/css" rel="stylesheet" />
+    <link href="../Include/styles.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" language="javascript" src="../Include/MasterJSFile.js"></script>
+
+    <style type="text/css">
+        A:link
+        {
+            color: #4a4a4a;
+            text-decoration: underline;
+        }
+        A:visited
+        {
+            color: #4a4a4a;
+            text-decoration: underline;
+        }
+        A:active
+        {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+        A:hover
+        {
+            color: #336699;
+            background-color: #c2ceda;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                                <tr style="height: 10px; padding-top: 5px;">
+                                    <td align="left" valign="middle">
+                                        &nbsp;<asp:Image ID="imgLogo" runat="server" ImageUrl="~/images/newlogo.gif" />
+                                    </td>
+                                    <td align="right" valign="middle" style="height: 10px">
+                                        <b>Welcome</b>&nbsp;|&nbsp;<asp:Label ID="lblUser" Font-Bold="true" runat="server"></asp:Label>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="btnInfo" runat="server"
+                                            OnClientClick="javascript:window.open('../Login/about.aspx','popupwindow','width=920,height=600,left=200,top=150,Scrollbars=yes')"
+                                            ForeColor="#3399ff">About</asp:LinkButton><asp:Label ID="Label2" runat="server" Text="|"
+                                                ForeColor="#3399ff"></asp:Label>
+                                        <asp:LinkButton ID="lnkhome" ForeColor="#3399ff" runat="server" CausesValidation="false"
+                                            OnClick="lnkhome_Click">Home</asp:LinkButton>
+                                        <asp:Label ID="Label5" runat="server" Text=" | " ForeColor="#3399ff"></asp:Label>
+                                        <asp:LinkButton ID="lnkhelp" ForeColor="#3399ff" runat="server" CausesValidation="false"
+                                            OnClientClick="javascript:window.open('../Help/Helpdekdocumentation.aspx','popupwindow','width=920,height=600,left=200,top=150,Scrollbars=yes')">Help</asp:LinkButton>
+                                        <asp:Label ID="Label3" runat="server" Text=" | " ForeColor="#3399ff"></asp:Label><asp:LoginStatus
+                                            ID="LoginStatus3" ForeColor="#3399ff" runat="server" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img alt="" src="../images/headerz.gif" />
+                                    </td>
+                                    <td width="50%" background="../images/headerz.gif">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img height="28" src="../images/topbottom.jpg" width="192" />
+                                    </td>
+                                    <td width="190%" background="../images/topbottomback.gif">
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr style="padding-bottom: 4px;">
+                                                    <td align="center">
+                                                        <asp:SiteMapDataSource ID="SiteMapDataSource1" ShowStartingNode="false" runat="server" />
+                                                        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" StaticPopOutImageUrl="../images/sp0.gif"
+                                                            StaticTopSeparatorImageUrl="../images/m_line1.gif" Orientation="Horizontal" Font-Bold="True"
+                                                            BackColor="#B5C7DE" Font-Names="Verdana" Font-Size="0.9em" ForeColor="#284E98"
+                                                            StaticSubMenuIndent="10px" DynamicHorizontalOffset="2" Width="100%">
+                                                            <StaticSelectedStyle BackColor="LightBlue" />
+                                                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                                            <DynamicHoverStyle BackColor="LightBlue" ForeColor="White" />
+                                                            <DynamicMenuStyle BackColor="#B5C7DE" />
+                                                            <DynamicSelectedStyle BackColor="#507CD1" />
+                                                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                                            <StaticHoverStyle BackColor="LightBlue" ForeColor="White" />
+                                                        </asp:Menu>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <td>
+                </tr>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img height="27" src="../images/topbackr.gif" width="162" />
+                                    </td>
+                                    <td valign="bottom" width="100%" background="../images/topbottomback01.gif">
+                                        <img height="10" alt="" src="../images/sp0.gif" align="bottom" border="0" />
+                                        <asp:Label ID="lblerror" runat="server" Text="" ForeColor="Red"></asp:Label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td background="images/m_bg.gif">
+                        <img height="26" src="images/sp0.gif" width="1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td background="../images/m_bg.gif">
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="16%">
+                                        <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td width="20%" align="right">
+                                                    &nbsp;
+                                                    <asp:Image ID="img2" runat="server" ImageUrl="~/images/computer4.bmp" />
+                                                </td>
+                                                <td width="50%" valign="top">
+                                                    <table width="100%" align="center">
+                                                        <tr>
+                                                            <td width="20%">
+                                                            </td>
+                                                            <td width="80%">
+                                                                <asp:TextBox ID="txtsearchcompname" Text="" runat="server"></asp:TextBox>
+                                                                <asp:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server" ServicePath="~/WebService.asmx"
+                                                                    ServiceMethod="GetComputernameList" CompletionSetCount="15" MinimumPrefixLength="1"
+                                                                    TargetControlID="txtsearchcompname" UseContextKey="true">
+                                                                </asp:AutoCompleteExtender>
+                                                            </td>
+                                                            <td width="20%">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="30%">
+                                                    &nbsp;&nbsp;
+                                                    <asp:ImageButton ID="btnSearchComputer" runat="server" CausesValidation='false' ImageUrl="~/images/login-button.gif"
+                                                        OnClick="btnSearchComputer_Click" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table cellspacing="0" cellpadding="0" border="0" width="200" style="height: 17px">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" bgcolor="#336699" width="206">
+                                                        <p align="left">
+                                                            <b><font color="#00274F">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <asp:LinkButton ID="lnkrefresh" runat="server" Text="Refresh" ForeColor="White" CausesValidation="false"
+                                                                    OnClick="lnkrefresh_Click"></asp:LinkButton>
+                                                                &nbsp; </font></b>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="width: 200px; height: 340px; overflow: scroll;">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="208">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="alink" align="left" width="206">
+                                                            <%--<table>
+                                                                <tr>
+                                                                    <td valign="top" align="left">--%>
+                                                            <asp:DataList ID="rptAlfha" runat="server" RepeatColumns="15" RepeatDirection="Horizontal"
+                                                                OnItemCommand="rptAlfha_ItemCommand">
+                                                                <ItemTemplate>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td align="center">
+                                                                                <font color="#00274F">
+                                                                                    <asp:LinkButton ID="lnkClick" CommandArgument='<%# Eval("Name") %>' CommandName="AlfhaName"
+                                                                                        runat="server" Text='<%# Eval("Name") %>'></asp:LinkButton></font>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </ItemTemplate>
+                                                            </asp:DataList>
+                                                            <%--                                                                    </td>
+                                                                    <td valign="top">--%>
+                                                            <%--  <asp:TreeView ID="Treeview1" runat="server" Visible="false" OnSelectedNodeChanged="Treeview1_SelectedNodeChanged" CollapseImageUrl="~/images/computer1.bmp" ExpandDepth="1" ExpandImageUrl="~/images/computer1.bmp" NoExpandImageUrl="~/images/computer1.bmp" >
+                            <DataBindings>
+                           
+                            <asp:TreeNodeBinding DataMember="Computer" ValueField="Name" TextField="Name" />
+                            </DataBindings>
+                            </asp:TreeView>--%>
+                                                            <asp:UpdatePanel ID="up" runat="server">
+                                                                <ContentTemplate>
+                                                                    <asp:DataList ID="dlSecondAplfha" runat="server" RepeatColumns="1" Visible="false"
+                                                                        RepeatDirection="Vertical" OnItemCommand="dlSecondAplfha_ItemCommand" Width="150px">
+                                                                        <ItemTemplate>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td align="right">
+                                                                                        <asp:Image ID="img2" runat="server" ImageUrl="~/images/computer4.bmp" />
+                                                                                    </td>
+                                                                                    <td align="center">
+                                                                                        <font color="#00274F">
+                                                                                            <asp:LinkButton ID="lnkClick" CommandArgument='<%# Eval("Name") %>' CommandName="AlfhaName"
+                                                                                                runat="server" Text='<%# Eval("Name") %>'></asp:LinkButton></font>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </ItemTemplate>
+                                                                    </asp:DataList></ContentTemplate>
+                                                            </asp:UpdatePanel>
+                                                            <%--</td>
+                                                                </tr>
+                                                            </table>--%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="alink" align="right" width="206">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <table id="Table1" width="100%" runat="server" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <asp:Panel ID="panel1" Width="96%" runat="server" BorderWidth="1" BorderColor="#3399ff">
+                                            <table width="100%" align="center" bgcolor="white" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td height="15px" width="2%" background="../images/left1.bmp">
+                                                    </td>
+                                                    <td height="15px" width="86%" background="../images/middle1.bmp">
+                                                        <asp:Label ID="Label1" runat="server" Text="Other Task" ForeColor="white" Font-Size="9px"
+                                                            Font-Bold="true"></asp:Label>
+                                                    </td>
+                                                    <td height="15px" width="12%" background="../images/right1.bmp">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        <table width="100%" align="center">
+                                                            <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="Imgsaveinventory" runat="server" ImageUrl="~/images/saveinventory.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                        <tr>
+                                                                            <td width="80%">
+                                                                                <asp:LinkButton ID="lnkSaveinventory" runat="server" Font-Bold="true" ForeColor="Blue"
+                                                                                    OnClick="lnkSaveinventory_Click">Save Inventory</asp:LinkButton>
+                                                                            </td>
+                                                                            <td width="20%" align="right">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="imgAddAsset" runat="server" ImageUrl="~/images/admin.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                        <tr>
+                                                                            <td width="80%">
+                                                                                <asp:LinkButton ID="lnkAddAsset" CausesValidation="false" runat="server" Font-Bold="true"
+                                                                                    ForeColor="Blue" OnClick="lnkAddAsset_Click">Add New Asset</asp:LinkButton>
+                                                                            </td>
+                                                                            <td width="20%" align="right">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/book.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                        <tr>
+                                                                            <td width="80%">
+                                                                                <asp:LinkButton ID="lnkShowAsset" CausesValidation="false" runat="server" Font-Bold="true"
+                                                                                    ForeColor="Blue" OnClick="lnkShowAsset_Click">View Assets</asp:LinkButton>
+                                                                            </td>
+                                                                            <td width="20%" align="right">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/images/logout.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                        <tr>
+                                                                            <td width="80%">
+                                                                                <asp:LinkButton ID="lnkAssetToSiteMapping" Font-Bold="true" ForeColor="Blue" CausesValidation="false"
+                                                                                    runat="server" OnClick="lnkAssetToSiteMapping_Click">Asset Mapping</asp:LinkButton>
+                                                                            </td>
+                                                                            <td width="20%" align="right">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            
+                                                            <%--//////Add by Vishal 05 June 2012--%>
+                                                            
+                                                              <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="Image3" runat="server" ImageUrl="~/images/networkIp.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                        <tr>
+                                                                            <td width="80%">
+                                                                                <asp:LinkButton ID="lnkAddNetworkDevice" Font-Bold="true" ForeColor="Blue" CausesValidation="false"
+                                                                                    runat="server" OnClick="lnkAddNetworkDevice_Click">Add Network</asp:LinkButton>
+                                                                            </td>
+                                                                            <td width="20%" align="right">
+                                                                            </td>
+                                                                            
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="Image4" runat="server" ImageUrl="~/images/discover.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                         <tr>
+                
+                <td width="80%" valign="top"><asp:LinkButton  ID="lnkNetworkScan" Font-Bold="true" ForeColor="Blue" CausesValidation="false" runat="server" OnClick="lnkNetworkScan_Click"  >Network Scan</asp:LinkButton></td>
+                 <td width="20%" align="right">
+                                                                            </td>
+                </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                                  <tr>
+                                                                <td width="5%">
+                                                                    <asp:Image ID="Image5" runat="server" ImageUrl="~/images/removeAsset.bmp" />
+                                                                </td>
+                                                                <td width="95%" valign="top">
+                                                                    <table width="100%" align="center">
+                                                                         <tr>
+                
+                <td width="80%" valign="top"><asp:LinkButton  ID="lnkRemoveAsset" Font-Bold="true" ForeColor="Blue" CausesValidation="false" runat="server" OnClick="lnkRemoveAsset_Click"  >Remove Asset</asp:LinkButton></td>
+                 <td width="20%" align="right">
+                                                                            </td>
+                </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </asp:Panel>
+                                        <table width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="right">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td width="2%" valign="top" background="../images/m_bg2.gif">
+                                        <img src="../images/m_bg2.gif">
+                                    </td>
+                                    <td width="82%" valign="top">
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="100%">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <img height="1" src="../images/sp0.gif" width="500">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text" valign="top">
+                                                        <table width="100%" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                                        </asp:ContentPlaceHolder>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text" valign="top" align="right">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td align="right">
+                                        &copy;<font style="font-weight: bold; font-size: smaller;">Copyright Progressive Infotech
+                                            Pvt Ltd, India 2010, All Rights Reserved.
+                                            <br />
+                                            Powered By </font><a href="http://www.progressive.in" target="_blank"><font style="color: Blue;">
+                                                Progressive Infotech Pvt Ltd.</font></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <img src="../images/topbuttomrow.gif" />
+                                    </td>
+                                    <td valign="top" align="center" width="100%" background="../images/topbuttomrowback.gif">
+                                        <img height="10" alt="" src="../images/sp0.gif" width="10" align="bottom" border="0" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

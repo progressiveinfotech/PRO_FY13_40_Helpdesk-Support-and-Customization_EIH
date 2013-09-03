@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode url="Default.aspx" title="Home" description="" roles="*">
+   
+    
+    <!--<siteMapNode title="Incident" url="~/login/usercall.aspx"  roles="User">
+
+
+    </siteMapNode>-->
+
+
+    <siteMapNode title="Incident Mgmt" url="~/Incident/default.aspx" roles="admin,Technician,SDE,PManager,SDM">
+
+      
+    </siteMapNode>
+
+    <siteMapNode title="Problem Mgmt" url="~/Problem/ViewProblem.aspx" roles="admin,Technician,SDE,PManager,SDM">
+
+      
+
+    </siteMapNode>
+
+    <siteMapNode title="Change Mgmt" url="~/Change/ViewChange.aspx" roles="admin,SDE,PManager,SDM">
+
+     
+    </siteMapNode>
+    <siteMapNode title="Knowledge Base" url="~/KEDB/ViewSolution.aspx"  roles="admin,Technician,SDE,PManager">
+
+     
+    </siteMapNode>
+
+    <siteMapNode title="Asset Mgmt" url="~/Asset/Default.aspx" roles="admin,SDE,PManager,SDM">
+
+     
+    </siteMapNode>
+
+    <siteMapNode title="Admin" url="~/admin/Default.aspx" roles="admin">
+
+      
+
+    </siteMapNode>
+
+    <siteMapNode title="Contract Mgmt" url="~/Contract/AddContract.aspx"  roles="admin,SDE,PManager">
+
+
+    </siteMapNode>
+    <siteMapNode title="Reports" url="~/Reports/Reports.aspx"  roles="admin,SDE,PManager">
+          
+    </siteMapNode>
+
+    <siteMapNode title="Dashboard" url="~/Dashboard/todayactivity.aspx"  roles="admin,SDE,PManager">
+
+    </siteMapNode>
+   
+
+   
+
+
+  </siteMapNode>
+
+
+</siteMap>
+

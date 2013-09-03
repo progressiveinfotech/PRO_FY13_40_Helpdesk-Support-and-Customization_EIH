@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<ErrorMessages>
+  <Error ID="OrgName">
+    <Message>Enter Organization Name</Message>
+  </Error>
+</ErrorMessages>

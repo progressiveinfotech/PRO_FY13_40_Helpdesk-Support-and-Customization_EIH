@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Dashboard_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Progressive HelpDesk</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Include/MasterCSSFile.css" type="text/css" rel="stylesheet" />
+    <link href="../Include/styles.css" type="text/css" rel="stylesheet" />
+   
+    <script type="text/javascript" language="javascript" src="../Include/MasterJSFile.js"></script>
+    <style type="text/css">
+      
+    A:link {
+	COLOR: #4a4a4a; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #4a4a4a; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #4a4a4a; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #336699; BACKGROUND-COLOR: #c2ceda; TEXT-DECORATION: none
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        amagac004<table  cellpadding="0"  cellspacing="0" width="100%" border="0">
+        <tbody>
+         <tr style="height:10px;Padding-top:5px;">
+                              <td align="left"   valign="middle" >&nbsp;&nbsp;<asp:Image ID="imgLogo" runat="server"  ImageUrl="~/images/newlogo.gif" /></td>
+                              <td align="right"   valign="middle" style="height:10px"><b>Welcome</b>&nbsp;|&nbsp;<asp:Label ID="lblUser" Font-Bold="true" runat="server"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="btnInfo" runat="server" OnClientClick="javascript:window.open('../Login/about.aspx','popupwindow','width=920,height=600,left=200,top=150,Scrollbars=yes')" ForeColor="#3399ff">About</asp:LinkButton><asp:Label ID="Label2" runat= server Text="|" ForeColor="#3399ff"></asp:Label>  
+                                  <asp:LinkButton ID="lnkhome" ForeColor="#3399ff" runat="server" 
+                                      onclick="lnkhome_Click" >Home</asp:LinkButton> <asp:Label ID="Label5" runat= server Text=" | " ForeColor="#3399ff"></asp:Label><asp:LinkButton ID="lnkhelp" ForeColor="#3399ff" runat="server" CausesValidation="false" OnClientClick="javascript:window.open('../Help/Helpdekdocumentation.aspx','popupwindow','width=920,height=600,left=200,top=150,Scrollbars=yes')">Help</asp:LinkButton> <asp:Label ID="Label1" runat= server Text=" | " ForeColor="#3399ff"></asp:Label> <asp:LoginStatus ID="LoginStatus3" ForeColor="#3399ff" runat="server" /></td>
+         </tr>
+      <tr>
+          <td><img alt="" src="../images/headerz.gif"  /></td>
+           <td  width="50%" background="../images/headerz.gif">&nbsp;</td>
+          
+          </tr>
+          </tbody>
+          </table>
+          <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tbody>
+        <tr>
+            <td><img height="28" sr 
+            </td>
+          <td width="190%" background="../images/topbottomback.gif">
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+              <tbody>
+              <tr style="padding-bottom:4px;">
+                <td align="center"><asp:SiteMapDataSource  ID="SiteMapDataSource1" ShowStartingNode="false" runat="server" /> 
+                    <asp:Menu ID="Menu1" runat="server" 
+                        DataSourceID="SiteMapDataSource1"   
+                        StaticPopOutImageUrl="../images/sp0.gif"
+                        StaticTopSeparatorImageUrl="../images/m_line1.gif"
+                        Orientation="Horizontal"
+                        Font-Bold="True"
+                        BackColor="#B5C7DE" Font-Names="Verdana" 
+                        Font-Size="0.9em" ForeColor="#284E98" 
+                        StaticSubMenuIndent="10px"
+                        DynamicHorizontalOffset="2"
+                         Width="100%"> 
+                        <StaticSelectedStyle BackColor="LightBlue" /> 
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" /> 
+                        <DynamicHoverStyle BackColor="LightBlue" ForeColor="White" /> 
+                        <DynamicMenuStyle BackColor="#B5C7DE"/> 
+                        <DynamicSelectedStyle BackColor="#507CD1" /> 
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" /> 
+                        <StaticHoverStyle BackColor="LightBlue" ForeColor="White" /> 
+                    </asp:Menu>
+                </td>
+           
+                  
+                  </tr>
+                </tbody></table>
+                </td></tr></tbody>
+                
+                </table>
+          
+    <table cellpadding="0" cellspacing="0" width="100%" height="600px" border="1">
+  
+    <tr>
+    <td width="18%" valign="top">
+    <asp:TreeView ID="helptreeview" runat="Server"  ImageSet="Arrows">
+            <ParentNodeStyle Font-Bold="False" />
+            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+            <SelectedNodeStyle Font-Underline="True" 
+                HorizontalPadding="0px" VerticalPadding="0px" ForeColor="#5555DD" />
+            <Nodes>
+                <asp:TreeNode Text="Dashboard" Value="Dashboard">
+                    <asp:TreeNode Text="Incident" Value="Incident">
+                        <asp:TreeNode PopulateOnDemand="True" Text="Today's Activity" 
+                            Value="Today's Activity" NavigateUrl="~/Dashboard/todayactivity.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="Severity Wise" Value="Severity Wise" 
+                            NavigateUrl="~/Dashboard/Prioritycall.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="Category Wise" Value="Category Wise" 
+                            NavigateUrl="~/Dashboard/Categorycall.aspx"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/Dashboard/BreachSLAReport.aspx" 
+                            Text="SLA Breach Performance " Value="SLA Breach Performance ">
+                        </asp:TreeNode>
+                         <asp:TreeNode NavigateUrl="~/Dashboard/HTDashboard.aspx" 
+                            Text="Call Performance Dashboard " Value="Call Performance Dashboard ">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+            <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" 
+                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+        
+        </asp:TreeView>
+    </td>
+    <td width="70%">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+     
+        
+    </div>
+    </form>
+</body>
+</html>

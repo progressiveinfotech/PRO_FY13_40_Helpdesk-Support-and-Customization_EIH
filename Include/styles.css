@@ -1,0 +1,361 @@
+body
+	{
+	margin:0px;
+	padding:0px;
+	font-family:tahoma;
+	font-size:11px;
+	color:#000000;
+	font-weight:normal;
+	}
+
+tr, td
+	{
+	font-family:tahoma;
+	font-size:11px;
+	color:#000000;
+	font-weight:normal;
+	}
+
+#topmenu
+	{
+	background-image:url(../images/link-bg.gif);
+	background-repeat:repeat-x;
+	color:#FFFFFF;
+	}
+#topmenu a:link, #topmenu a:visited
+	{
+	color:#FFFFFF;
+	font-size:11px;
+	background-image:none;
+	font-family:tahoma;
+	text-decoration:none;
+	font-weight:bold;
+	padding:0px 10px 2px 10px;
+	}
+#topmenu a:active
+	{
+	color:#FFFFFF;
+	background-image:url(../images/link-bg-over.gif);
+	}
+#topmenu a:hover
+	{
+	color:#FFFFFF;
+	background-image:url(../images/link-bg-over.gif);
+	text-decoration:none;
+	padding:0px 10px 2px 10px;
+	}
+	
+#submenu
+	{
+	
+	background-repeat:repeat-x;
+	color:#FFFFFF;
+	}
+#submenu a:link, #submenu a:visited
+	{
+	color:#FFFFFF;
+	font-size:11px;
+	background-image:none;
+	font-family:tahoma;
+	text-decoration:none;
+	font-weight:bold;
+	padding:0px 10px 2px 10px;
+	}
+#submenu a:active
+	{
+	color:#FFFFFF;
+	background-image:url(../images/link-bg-over.gif);
+	}
+#submenu a:hover
+	{
+	color:green;
+	background-image:url(../images/link-bg-over.gif);
+	text-decoration:none;
+	padding:0px 10px 2px 10px;
+	}	
+	
+
+.lefthead
+	{
+	background-color:#CCCCCC;
+	padding-left:12px;
+	color:#000000;
+	font-weight:bold;
+	}
+	
+#leftnav a:link
+	{
+	color:#0c7776;
+	font-size:11px;
+	font-family:tahoma;
+	text-decoration:none;
+	display:block;
+	width:165px;
+	border-bottom:1px solid #FFFFFF;
+	padding:3px 3px 3px 12px;
+	}
+#leftnav a:hover
+	{
+	color:#000000;
+	background-color:#e1e1e1;
+	text-decoration:none;
+	}
+	
+.smalltxt
+	{
+	font-size:10px;
+	color:#666666;
+	}
+
+#whitetxt
+	{
+	font-size:11px;
+	color:#FFFFFF;
+	}
+#whitetxt a
+	{
+	font-size:11px;
+	color:#FFFFFF;
+	}
+	
+a:link, a:visited
+	{
+	color:#000000;
+	}
+a:hover
+	{
+	color:#117b7c;
+	}
+
+form
+	{
+	margin:0px;
+	}
+	
+input, select, textarea
+	{
+	font-size:11px;
+	border:1px solid #000000;
+	font-family:Tahoma;
+	margin-top: 0px;
+    height: 19px;
+}
+	
+.websitename_25 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration:none;	
+}
+.watermarked {
+	height:20px;
+	width:150px;
+	padding:2px 0 0 2px;
+	border:1px solid #BEBEBE;
+	background-color:#F0F8FF;
+	color:gray;
+}	
+
+#centermenu
+	{
+	color:#FFFFFF;
+	float:left;
+	}
+#centermenu a:link, #centermenu a:visited
+	{
+	color:#FFFFFF;
+	float:left;
+	text-decoration:none;
+	border-right:1px solid #FFFFFF;
+	font-weight:bold;
+	padding:6px 15px 6px 15px;
+	}
+#centermenu a:hover
+	{
+	background-color:#278e8e;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+	
+.boldAnchor
+{
+    font-weight:bold;
+}
+
+#leftnav a:visited
+	{
+	color:#0c7776;
+	font-size:11px;
+	font-family:tahoma;	
+	text-decoration:none;
+	display:block;
+	width:165px;
+	border-bottom:1px solid #FFFFFF;
+	padding:3px 3px 3px 12px;
+	}
+	
+#leftnav a:active
+	{
+	color:#0c7776;
+	font-size:11px;
+	font-family:tahoma;
+	font-weight:bold;	
+	text-decoration:none;
+	display:block;
+	width:165px;
+	border-bottom:1px solid #FFFFFF;
+	padding:3px 3px 3px 12px;
+	}	
+	
+.normal_txt
+	{
+	font-size:11px;
+	border:0px solid #000000;
+	}	
+	
+ .Header
+	{
+	border-style:solid;border-color:Black;border-width:2px;
+	
+	}
+  .tdHeader { font-size:12px;font-weight:bold;text-decoration: none; }
+  
+  .maintext2 {
+	font-size: 12px;
+	font-weight: normal;
+	
+}
+
+.normalgrey_12 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#666666;
+	font-weight: normal;
+	text-decoration:none;
+}
+
+
+/* Calculator Styles */
+
+
+/* delete the style declaration below if you do not want it to be transparent! */
+
+
+.drag
+{
+	position:relative;
+	cursor:hand
+}
+#calculator
+{
+	background-color:#F4F4F4;
+	cursor:move;
+	width:190px;
+}
+.calculatorcontainer
+{
+	padding:5px;
+	border-top:1px solid #C0C0C0;
+	border-left:1px solid #C0C0C0;
+	border-right:2px outset #C0C0C0;
+	border-bottom:2px outset #C0C0C0;
+}
+#calculator #control
+{
+	text-align:right;
+}
+#calculator input
+{
+	width:40px;
+	height:30px;
+	margin:2px;
+	background-color:#FFF;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:0.95em;
+	border:1px solid #C0C0C0;
+	
+	
+}
+
+#calculator .equals
+{
+	color:#FFF;
+	font-weight:bold;
+	background-color:#339999;
+	
+}
+.result
+{
+	width:173px;
+	font-size:1.3em;
+	padding:3px;
+	cursor:text;
+	text-align:right
+}
+.tdheader
+{
+	 background-color:#E1E1E1;
+	 font-weight:bold;
+	 height:20px;
+	
+}
+.tdsubheading
+{
+	background-color:white;
+	font-family:Tahoma;
+	font-size:small;
+	
+}
+.button
+{ 
+
+	visibility:inherit;
+	font-family:Tahoma;
+	font-weight:bold;
+	
+}
+.mandatory{ color:Red;}
+.Gridview
+{
+	  background-color:White;
+	   border-color:#DEDFDE;
+	   border-style:none;
+	   border-width:1PX;
+	   
+	   
+}
+.Gridview-pagerstyle
+{
+	background-color:White;
+	color:Black;
+	text-align:center;
+	vertical-align:middle;
+	font-size: large;
+	 
+
+}
+.Gridview-header
+{
+	background-color:#E1E1E1;
+	font-size:Bold;
+	color:Black;
+
+	
+}
+.Gridview-alternating
+{ 
+	
+	background-color:#E1E1E1;
+	color:Orange;
+	border-color:Blue;
+	font-weight:600;
+	font-size:large;
+	
+}
+.tdheaderI
+{
+	 background-color:Silver;
+	 height:20px;
+	
+}

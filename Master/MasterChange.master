@@ -1,0 +1,337 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterChange.master.cs" Inherits="Master_MasterChange" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Progressive HelpDesk</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    <style type="text/css">
+        .style1
+        {
+            height: 18px;
+        }
+    </style>
+    </asp:ContentPlaceHolder>
+     <link href="../Include/MasterCSSFile.css" type="text/css" rel="stylesheet" />
+    <link href="../Include/styles.css" type="text/css" rel="stylesheet" />
+   
+    <script type="text/javascript" language="javascript" src="../Include/MasterJSFile.js"></script>
+    <style type="text/css">
+      
+    A:link {
+	COLOR: #4a4a4a; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #4a4a4a; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #4a4a4a; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #336699; BACKGROUND-COLOR: #c2ceda; TEXT-DECORATION: none
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+     <tr>
+    <td>
+      <table  cellpadding="0"  cellspacing="0" width="100%" border="0">
+        <tbody>
+        <tr style="height:10px;Padding-top:5px;">
+                              <td align="left"   valign="middle" >&nbsp;<asp:Image ID="imgLogo" runat="server"  ImageUrl="~/images/newlogo.gif" /></td>
+                              <td align="right"   valign="middle" style="height:10px"><b>Welcome</b>&nbsp;|&nbsp;<asp:Label ID="lblUser" Font-Bold="true" runat="server"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="btnInfo"  CausesValidation="false" runat="server" OnClientClick="javascript:window.open('../Login/about.aspx','popupwindow','width=920,height=600,left=200,top=150,Scrollbars=yes')" ForeColor="#3399ff">About</asp:LinkButton><asp:Label ID="Label2" runat= server Text="|" ForeColor="#3399ff"></asp:Label>
+                                  <asp:LinkButton ID="lnkhome" ForeColor="#3399ff" runat="server" 
+                                    CausesValidation="false" onclick="lnkhome_Click"    >Home</asp:LinkButton> <asp:Label ID="Label5" runat= server Text=" | " ForeColor="#3399ff"></asp:Label> <asp:LinkButton ID="lnkhelp" ForeColor="#3399ff" runat="server" CausesValidation="false" OnClientClick="javascript:window.open('../Help/Helpdekdocumentation.aspx','popupwindow','width=920,height=600,left=200,top=150,Scrollbars=yes')">Help</asp:LinkButton> <asp:Label ID="Label1" runat= server Text=" | " ForeColor="#3399ff"></asp:Label><asp:LoginStatus ID="LoginStatus3" ForeColor="#3399ff" runat="server" /></td>
+         </tr>
+         <tr>
+          <td><img alt="" src="../images/headerz.gif"  /></td>
+           <td  width="50%" background="../images/headerz.gif">&nbsp;</td>
+          
+          </tr>
+          </tbody>
+          </table>
+          </td>
+          </tr>
+          
+          <tr>
+    <td>
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tbody>
+        <tr>
+            <td><img height="28" src="../images/topbottom.jpg" width="192" /> 
+            </td>
+          <td width="190%" background="../images/topbottomback.gif">
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+              <tbody>
+              <tr style="padding-bottom:4px;">
+                <td align="center"><asp:SiteMapDataSource  ID="SiteMapDataSource1" ShowStartingNode="false" runat="server" /> 
+                    <asp:Menu ID="Menu1" runat="server" 
+                        DataSourceID="SiteMapDataSource1"   
+                        StaticPopOutImageUrl="../images/sp0.gif"
+                        StaticTopSeparatorImageUrl="../images/m_line1.gif"
+                        Orientation="Horizontal"
+                        Font-Bold="True"
+                        BackColor="#B5C7DE" Font-Names="Verdana" 
+                        Font-Size="0.9em" ForeColor="#284E98" 
+                        StaticSubMenuIndent="10px"
+                        DynamicHorizontalOffset="2"
+                         Width="100%"> 
+                        <StaticSelectedStyle BackColor="LightBlue" /> 
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" /> 
+                        <DynamicHoverStyle BackColor="LightBlue" ForeColor="White" /> 
+                        <DynamicMenuStyle BackColor="#B5C7DE"/> 
+                        <DynamicSelectedStyle BackColor="#507CD1" /> 
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" /> 
+                        <StaticHoverStyle BackColor="LightBlue" ForeColor="White" /> 
+                    </asp:Menu>
+                </td>
+           
+                  
+                  </tr>
+                </tbody></table>
+                </td></tr></tbody>
+                
+                </table></td></tr>
+    
+    <tr><td>
+    
+    
+    <table cellpadding="0" cellspacing="0" width="100%" border="0">
+    <tbody>
+    <tr>
+    <td><img height="27" src="../images/topbackr.gif" width="162" /></td>
+    <td valign="bottom" width="100%" background="../images/topbottomback01.gif"> <img height="10" alt=""   src="../images/sp0.gif"  align="bottom" border="0" /><%--<b>Welcome</b> |  <asp:Label ID="lblUser" Font-Bold="true" runat="server"></asp:Label> --%>   
+    
+  
+    </td>
+    
+    
+    </tr>
+    </tbody>
+    
+    </table>
+    
+    
+    </td>
+    
+    
+    </tr>
+    
+    <tr><td background="images/m_bg.gif"><img height="26"  src="images/sp0.gif" width="1" /></td></tr>
+    
+    
+    <tr>
+    <td background="../images/m_bg.gif">
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tbody>
+        <tr>
+          <td valign="top" width="16%">
+            <table cellspacing="0" cellpadding="0" border="0" width="208">
+              <tbody>
+              <tr>
+                <td align="right" background="../images/tdimg.bmp" width="206">
+                  <p align="center"><b><font color="#00274F">&nbsp;&nbsp;</font></b></p>
+                </td></tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td align="center">
+               <%-- <asp:Panel ID="panel1" width="88%" runat="server" BorderWidth="1" BorderColor="#3399ff">
+                 <table width="100%" align="center"  bgcolor="white" border="0"  cellpadding="0" cellspacing="0">
+                 
+                  <tr>
+                        <td height="15px" width="2%" background="../images/left1.bmp"></td>
+                        <td height="15px" align="left" width="86%" background="../images/middle1.bmp"><asp:Label ID="Label1" runat="server" Text="Search" ForeColor="white" Font-Size="9px" Font-Bold="true"></asp:Label></td>
+                        <td height="15px" width="12%" background="../images/right1.bmp"></td>
+                 </tr>
+                 <tr><td>&nbsp;</td></tr>
+                 <tr>
+                 <td>&nbsp;</td>
+                 <td align="left">Select Filter &nbsp;&nbsp;<asp:DropDownList Width="90px" ID="drpFilter" runat="server">
+                   <asp:ListItem Text="Ticket id" Value="1"></asp:ListItem>
+                  <asp:ListItem Text="Requester Name" Value="2"></asp:ListItem>
+                 
+                 </asp:DropDownList></td>
+                 <td>&nbsp;</td>
+                 
+                 </tr>
+                 <tr><td>&nbsp;</td></tr>
+                 <tr>
+                 <td>&nbsp;</td>
+                 <td align="left">Enter Keyword &nbsp;&nbsp;</td>
+                 <td>&nbsp;</td>
+                 
+                 </tr>
+                  <tr>
+                 <td>&nbsp;</td>
+                 <td align="left">
+                    <asp:TextBox ID="txtKeyword" Height="18px" runat="server"></asp:TextBox>&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="imgbtnSearch" runat="server" CausesValidation='false' ImageUrl="~/images/login-button.gif" 
+                         onclick="imgbtnSearch_Click" /></td>
+                 <td>&nbsp;</td>
+                 
+                 </tr>
+               <tr><td>&nbsp;</td></tr>
+                 </table> 
+                   </asp:Panel>--%>
+                </td>
+                </tr>
+                 <tr>
+                <td align="center">
+                <asp:Panel ID="panel2" width="88%" runat="server" BorderWidth="1" BorderColor="#3399ff">
+                 <table width="100%" align="center"  bgcolor="white" border="0"  cellpadding="0" cellspacing="0">
+                 
+                  <tr>
+                        <td height="15px" width="2%" background="../images/left1.bmp"></td>
+                        <td height="15px" align="left" width="86%" background="../images/middle1.bmp"><asp:Label ID="Label3" runat="server" Text="Search Solution" ForeColor="white" Font-Size="9px" Font-Bold="true"></asp:Label></td>
+                        <td height="15px" width="12%" background="../images/right1.bmp"></td>
+                 </tr>
+                 <tr><td>&nbsp;</td></tr>
+                
+                 <tr><td>&nbsp;</td></tr>
+                 <tr>
+                 <td>&nbsp;</td>
+                 <td align="left">Enter Keyword &nbsp;&nbsp;</td>
+                 <td>&nbsp;</td>
+                 
+                 </tr>
+                  <tr>
+                 <td>&nbsp;</td>
+                 <td align="left">
+                    <asp:TextBox ID="txtSolution" Height="18px" runat="server"></asp:TextBox>&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation='false' 
+                         ImageUrl="~/images/login-button.gif" onclick="ImageButton1_Click" 
+                          /></td>
+                 <td>&nbsp;</td>
+                 
+                 </tr>
+               <tr><td>&nbsp;</td></tr>
+                 </table> 
+                   </asp:Panel>
+                </td>
+                </tr>
+                <tr>
+                <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                <td align="left">&nbsp;&nbsp;<asp:Image ID="imgNewRequest"  runat="server" ImageUrl="~/images/smallchange.bmp" /> &nbsp;&nbsp;<asp:LinkButton 
+                        ID="lnkNewRequest" runat="server" CausesValidation="false" 
+                        Font-Bold="true" Text="New Change" onclick="lnkNewRequest_Click" 
+                        ></asp:LinkButton></td>
+                </tr>
+                 <tr style="padding-top:10px;">
+                <td align="left">&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="imgShowRequest"  runat="server" ImageUrl="~/images/smallmyticket.bmp" /> &nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton 
+                        ID="lnkShowRequest" runat="server" CausesValidation="false" 
+                        Font-Bold="true" Text="All Changes" onclick="lnkShowRequest_Click" 
+                        ></asp:LinkButton></td>
+                </tr>
+               
+              
+              <tr>
+                <td class="alink" align="right" width="206"> 
+            </td></tr></tbody></table>
+            <table width="100%" border="0">
+              <tbody>
+              <tr>
+                <td align="right">&nbsp;</td></tr></tbody></table></td>
+          <td width="2%" valign="top" background="../images/m_bg2.gif"><img  src="../images/m_bg2.gif"></td>
+          <td width="82%" valign="top">
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+              <tbody>
+              <tr>
+                <td width="100%"> </td></tr>
+              <tr>
+                <td colSpan="2"><img height="1" src="../images/sp0.gif" width="500"></td></tr>
+              <tr>
+                <td class="text" valign="top">
+                  <table width="100%" border="0">
+                    <tbody>
+                    <tr>
+                      <td>
+                      <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+                           </asp:ContentPlaceHolder></td> </tr> 
+                   
+                  
+                    </tbody></table></td></tr>
+              <tr>
+                <td class="text" valign="top" align="right">&nbsp; 
+            </td></tr></tbody></table></td>
+       </tr></tbody></table>
+      
+         
+      
+      
+      </td></tr>
+      
+      
+     <%-- <tr>
+    <td background="../images/m_bg.gif">
+      <table width="100%">
+        <tbody>
+        <tr>
+          <td></td>
+          <td align="right"><img height="26" src="../images/sp0.gif"  width="1"> &nbsp; </td></tr></tbody></table></td></tr>--%>
+          
+          
+          
+          
+          <tr>
+    <td>
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tbody>
+        <tr><td>&nbsp;</td></tr>
+         <tr><td>&nbsp;</td></tr>
+         
+      
+        <tr>
+        <td>&nbsp;</td>
+        <td align="right">&copy;<font style=" font-weight:bold;font-size:smaller; ">Copyright Progressive Infotech Pvt Ltd, India 2010, All Rights Reserved.  <br/>
+                          Powered By </font><a href="http://www.progressive.in" target="_blank"><font style="color:Blue;">Progressive Infotech Pvt Ltd.</font></a></td></tr>
+       
+      
+        
+        
+        <tr>
+          <td align="left"><img src="../images/topbuttomrow.gif" /></td>
+          <td valign="top" align="center" width="100%"    background="../images/topbuttomrowback.gif">
+         
+            
+            
+            <img     height="10" alt="" src="../images/sp0.gif" width="10"    align="bottom" border="0" /> </td>
+            
+            </tr>
+            
+            
+            </tbody></table>
+            
+            </td>
+            </tr>
+    
+    
+     
+    
+    </tbody>
+    
+    
+    </table>
+    
+    
+    
+        
+    </div>
+    </form>
+</body>
+</html>

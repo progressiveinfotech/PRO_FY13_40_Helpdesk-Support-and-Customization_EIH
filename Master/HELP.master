@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HELP.master.cs" Inherits="Master_HELP" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table cellpadding="0" cellspacing="0" width="100%" border="1">
+    <tr>
+    <td width="18%" valign="top">
+    <asp:TreeView ID="helptreeview" runat="Server"  ImageSet="WindowsHelp">
+            <ParentNodeStyle Font-Bold="False" />
+            <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+            <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" 
+                HorizontalPadding="0px" VerticalPadding="0px" />
+            <Nodes>
+                <asp:TreeNode Text="Helpdesk Software Guide" Value="Helpdesk Software Guide" 
+                    NavigateUrl="~/HELP/HelpdekDocumentation.aspx">
+                    <asp:TreeNode Text="Workflow" Value="Workflow" NavigateUrl="~/HELP/IM.aspx">
+                        <asp:TreeNode Text="Incident Management" Value="Incident Management" 
+                            NavigateUrl="~/HELP/IIM.aspx" ToolTip="IM Flow">
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Problem Management" Value="Problem Management" 
+                            NavigateUrl="~/HELP/PM.aspx">
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Change Management" Value="Change Management" 
+                            NavigateUrl="~/HELP/CM.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="Knowledgebase" Value="Knowledgebase" 
+                            NavigateUrl="~/HELP/KB.aspx"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Login" Value="Login" NavigateUrl="~/HELP/Loginhelp.aspx">
+                        <asp:TreeNode NavigateUrl="~/HELP/Loginhelp.aspx" Text="LoginPage" 
+                            Value="LoginPage"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Incident Management" Value="Incident Management">
+                        <asp:TreeNode NavigateUrl="~/HELP/IMRegistration.aspx" 
+                            Text="Incident Registration" Value="Incident Registration"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/ViewIM.aspx" Text="View Incident" 
+                            Value="View Incident"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/EDITIM.aspx" Text="Edit Incident" 
+                            Value="Edit Incident"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/IMtoCM.aspx" Text="Link To a change" 
+                            Value="Link To a change"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/TPTOPM.aspx" Text="Link To A Problem" 
+                            Value="Link To A Problem"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Problem Management" Value="Problem Management">
+                        <asp:TreeNode NavigateUrl="~/HELP/PmRegistration.aspx" 
+                            Text="Problem Registration" Value="Problem Registration"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/ViewPM.aspx" Text="View Problems" 
+                            Value="View Problems"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/EditPM.aspx" Text="Edit Problem" 
+                            Value="Edit Problem"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/linkToChange.aspx" Text="Link To Change" 
+                            Value="Link To Change"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Change Management" Value="Change Management">
+                        <asp:TreeNode NavigateUrl="~/HELP/ChangeRegistration.aspx" 
+                            Text="Change Registration" Value="Change Registration"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/ViewCM.aspx" Text="View Change" 
+                            Value="View Change"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/EditCM.aspx" Text="Edit Change" 
+                            Value="Edit Change"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Knowledge Base" Value="Knowledge Base">
+                        <asp:TreeNode NavigateUrl="~/HELP/AddKedb.aspx" Text="Create Solution" 
+                            Value="Create Solution"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/HELP/ViewKedb.aspx" Text="View Solution" 
+                            Value="View Solution"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Contract Management" Value="Contract Management">
+                        <asp:TreeNode NavigateUrl="~/HELP/AddContract.aspx" Text="Ad New Contract" 
+                            Value="Ad New Contract"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Asset Management" Value="Asset Management">
+                        <asp:TreeNode Text="Create Asset" Value="Create Asset"></asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+            <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" 
+                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="1px" />
+        
+        </asp:TreeView>
+    </td>
+    <td width="70%">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+     
+        
+    </div>
+    </form>
+</body>
+</html>

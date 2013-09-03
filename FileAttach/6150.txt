@@ -1,0 +1,6 @@
+ if (FileUpload1.HasFile) 
+          // Call a helper method routine to save the file.
+          SaveFile(FileUpload1.PostedFile);
+        else
+          // Notify the user that a file was not uploaded.
+          UploadStatusLabel.Text = "You did not specify a file to upload.";
